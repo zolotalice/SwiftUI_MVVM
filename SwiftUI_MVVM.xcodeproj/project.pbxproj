@@ -11,8 +11,9 @@
 		324908F22689E9B7002BFC80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324908F12689E9B7002BFC80 /* ContentView.swift */; };
 		324908F42689E9BA002BFC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324908F32689E9BA002BFC80 /* Assets.xcassets */; };
 		324908F72689E9BA002BFC80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324908F62689E9BA002BFC80 /* Preview Assets.xcassets */; };
-		324908F92689E9BA002BFC80 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324908F82689E9BA002BFC80 /* Persistence.swift */; };
 		324908FC2689E9BA002BFC80 /* SwiftUI_MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 324908FA2689E9BA002BFC80 /* SwiftUI_MVVM.xcdatamodeld */; };
+		324909042689EBE6002BFC80 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324909032689EBE6002BFC80 /* CoreDataManager.swift */; };
+		324909072689F047002BFC80 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324909062689F047002BFC80 /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +22,10 @@
 		324908F12689E9B7002BFC80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		324908F32689E9BA002BFC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324908F62689E9BA002BFC80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		324908F82689E9BA002BFC80 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		324908FB2689E9BA002BFC80 /* SwiftUI_MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_MVVM.xcdatamodel; sourceTree = "<group>"; };
 		324908FD2689E9BB002BFC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		324909032689EBE6002BFC80 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		324909062689F047002BFC80 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +58,11 @@
 		324908EE2689E9B7002BFC80 /* SwiftUI_MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				324909052689F001002BFC80 /* View Models */,
 				324908EF2689E9B7002BFC80 /* SwiftUI_MVVMApp.swift */,
 				324908F12689E9B7002BFC80 /* ContentView.swift */,
 				324908F32689E9BA002BFC80 /* Assets.xcassets */,
-				324908F82689E9BA002BFC80 /* Persistence.swift */,
 				324908FD2689E9BB002BFC80 /* Info.plist */,
-				324908FA2689E9BA002BFC80 /* SwiftUI_MVVM.xcdatamodeld */,
 				324908F52689E9BA002BFC80 /* Preview Content */,
 			);
 			path = SwiftUI_MVVM;
@@ -70,9 +71,19 @@
 		324908F52689E9BA002BFC80 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				324909032689EBE6002BFC80 /* CoreDataManager.swift */,
+				324908FA2689E9BA002BFC80 /* SwiftUI_MVVM.xcdatamodeld */,
 				324908F62689E9BA002BFC80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		324909052689F001002BFC80 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				324909062689F047002BFC80 /* TaskListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +112,9 @@
 		324908E42689E9B7002BFC80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
@@ -144,10 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324908F92689E9BA002BFC80 /* Persistence.swift in Sources */,
 				324908FC2689E9BA002BFC80 /* SwiftUI_MVVM.xcdatamodeld in Sources */,
 				324908F22689E9B7002BFC80 /* ContentView.swift in Sources */,
+				324909042689EBE6002BFC80 /* CoreDataManager.swift in Sources */,
 				324908F02689E9B7002BFC80 /* SwiftUI_MVVMApp.swift in Sources */,
+				324909072689F047002BFC80 /* TaskListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
